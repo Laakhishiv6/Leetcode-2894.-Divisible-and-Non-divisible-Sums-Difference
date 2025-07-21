@@ -26,24 +26,6 @@ Range =[1 to 5]
 Divisible numbers = [1,2,3,4,5]
 Non Divisible numbers = [0]
 # Code
- C++
- class Solution {
-public:
-    int differenceOfSums(int n, int m) {
-        int divisible=0;
-        int nondivisible=0;
-        for(int i=1;i<=n;i++){
-            if(i%m==0){
-                divisible+=i;
-            }
-            else{
-                nondivisible+=i;
-            }
-        
-        }
-        return nondivisible-divisible;
-    }
-};
 
 1. In this question we have to find all the numbers from range 1 to n which should be divided by m  .
 2. Add all these numbers into a variable called divisible .
